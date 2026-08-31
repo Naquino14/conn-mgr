@@ -1,0 +1,5 @@
+config MODULE_CONN_MGR
+    bool "Enable Connection Manager Module"
+    default y
+    help
+        Connection Manager manages and watches WiFi connections and provides wrappers for common IP operations.

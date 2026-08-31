@@ -1,0 +1,5 @@
+manifest:
+  version: "1.0.4"
+  projects:
+    - name: conn_mgr
+      path: .
