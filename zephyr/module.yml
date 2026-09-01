@@ -1,3 +1,4 @@
+name: conn_mgr
 build:
-  cmake: CMakeLists.txt
   kconfig: Kconfig
+  cmake: .
