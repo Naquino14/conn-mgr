@@ -6,13 +6,13 @@ if(CONFIG_MODULE_CONN_MGR)
 
     add_library(conn_mgr INTERFACE)
 
-    target_sources(conn_mgr INTERFACE
-        src/conn_mgr.c
-    )
-
     target_include_directories(conn_mgr INTERFACE
         include/
     )
 
-    target_link_directories(conn_mgr INTERFACE zephyr_interface)
+    target_sources(conn_mgr INTERFACE
+        src/conn_mgr.c
+    )
+
+    target_link_libraries(conn_mgr INTERFACE zephyr_interface)
 endif()

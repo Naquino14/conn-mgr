@@ -1,4 +1,4 @@
-#include "conn-mgr.h"
+#include <conn_mgr.h>
 
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
