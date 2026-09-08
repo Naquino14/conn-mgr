@@ -314,7 +314,7 @@ static void ping_cleanup() {
     k_sem_give(&ping_sem);
 }
 
-static int net_icmp_reply_handler_cb(struct net_icmp_ctx *ctx,
+static enum net_verdict net_icmp_reply_handler_cb(struct net_icmp_ctx *ctx,
                                      struct net_pkt *pkt,
                                      struct net_icmp_ip_hdr *ip_hdr,
                                      struct net_icmp_hdr *icmp_hdr,
